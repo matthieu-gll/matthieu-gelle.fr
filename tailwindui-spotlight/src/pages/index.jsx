@@ -236,7 +236,7 @@ function Photos() {
             )}
           >
             <Image
-              // src={image}
+              src={image}
               alt=""
               sizes="(min-width: 640px) 18rem, 11rem"
               className="absolute inset-0 h-full w-full object-cover"
