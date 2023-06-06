@@ -165,7 +165,10 @@ function Resume() {
       title: 'Digitalisation des entreprises',
       logo: logoFacebook,
       start: '2021',
-      end: '2023',
+      end: {
+        label: "Aujourd'hui",
+        dateTime: new Date().getFullYear(),
+      },
     },
   ]
 
@@ -339,6 +342,29 @@ export default function Home({ articles }) {
                 streaming et à la mise en ligne de vidéos. J'optimise les
                 performances techniques et m'assure que notre plateforme offre
                 une expérience immersive de shopping en direct.
+              </Card.Description>
+              <Card.Cta>Se rendre sur le site</Card.Cta>
+            </Card>
+            <Card as="article">
+              <Card.Title
+                href={`https://directory.opquast.com/fr/certificat/CHVSQP/`}
+              >
+                Expert du web - Opquast
+              </Card.Title>
+              <Card.Eyebrow as="time" dateTime={''} decorate>
+                {'Juin 2021 à Juin 2026'}
+              </Card.Eyebrow>
+              <Card.Description>
+                J'ai obtenu une certification Opquast avec un score de 930/1000,
+                ce qui me reconnaît en tant qu'expert. Cette certification
+                atteste de ma maîtrise des bonnes pratiques de qualité web et de
+                mon expertise dans ce domaine. J'ai démontré ma capacité à
+                développer des sites web conformes aux normes et aux exigences
+                de qualité, en mettant l'accent sur la performance,
+                l'accessibilité, la compatibilité et la sécurité. Cette
+                reconnaissance valide mes compétences en matière de
+                développement web et renforce ma crédibilité en tant que
+                professionnel dans le domaine.
               </Card.Description>
               <Card.Cta>Se rendre sur le site</Card.Cta>
             </Card>
