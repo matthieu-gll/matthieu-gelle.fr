@@ -141,8 +141,8 @@ function Newsletter() {
 function Resume() {
   let resume = [
     {
-      company: 'Flunch',
-      title: 'Programme de fidélité - Lead technique',
+      company: 'Insitaction',
+      title: 'Lead technique',
       logo: logoPlanetaria,
       start: '2023',
       end: {
@@ -151,26 +151,22 @@ function Resume() {
       },
     },
     {
-      company: 'Starshopper',
-      title: 'Solution de liveshopping - Lead technique',
-      logo: logoFacebook,
-      start: '2022',
-      end: "Aujourd'hui",
+      company: 'Insitaction',
+      title: 'Développeur web',
+      logo: logoPlanetaria,
+      start: '2019',
+      end: {
+        label: "Aujourd'hui",
+        dateTime: new Date().getFullYear(),
+      },
     },
     {
       company: 'Auto-entrepreneur',
-      title: 'Digitalisation des entreprises - Développeur web',
+      title: 'Digitalisation des entreprises',
       logo: logoFacebook,
       start: '2021',
       end: '2023',
     },
-    // {
-    //   company: 'Starbucks',
-    //   title: 'Shift Supervisor',
-    //   logo: logoStarbucks,
-    //   start: '2008',
-    //   end: '2011',
-    // },
   ]
 
   return (
@@ -324,7 +320,7 @@ export default function Home({ articles }) {
                 de fidéliser et d'engager davantage les clients de Flunch.
               </Card.Description>
               <Card.Cta>
-                <span className="line-through mr-2">Se rendre sur le site</span>
+                <span className="mr-2 line-through">Se rendre sur le site</span>
                 (bientôt disponible)
               </Card.Cta>
             </Card>
@@ -343,6 +339,26 @@ export default function Home({ articles }) {
                 streaming et à la mise en ligne de vidéos. J'optimise les
                 performances techniques et m'assure que notre plateforme offre
                 une expérience immersive de shopping en direct.
+              </Card.Description>
+              <Card.Cta>Se rendre sur le site</Card.Cta>
+            </Card>
+            <Card as="article">
+              <Card.Title href={`https://cuisinedeco.fr/`}>
+                Développement d'un site vitrine - Cuisine Déco
+              </Card.Title>
+              <Card.Eyebrow as="time" dateTime={''} decorate>
+                {'Mars 2021 à Avril 2021'}
+              </Card.Eyebrow>
+              <Card.Description>
+                En tant qu'auto-entrepreneur, j'ai été chargé du développement
+                d'un site web vitrine pour un cuisiniste. Ma mission consistait
+                à créer une plateforme en ligne attrayante, conviviale et
+                fonctionnelle, mettant en valeur les produits et services du
+                cuisiniste. J'ai travaillé en étroite collaboration avec
+                l'équipe de conception pour concrétiser leurs idées et j'ai
+                veillé à ce que le site web offre une expérience utilisateur
+                optimale. Mon objectif était de fournir au cuisiniste un site
+                web vitrine moderne et efficace pour promouvoir son activité.
               </Card.Description>
               <Card.Cta>Se rendre sur le site</Card.Cta>
             </Card>
